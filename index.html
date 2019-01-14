@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gus Richardson Project One</title>
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="introDiv">
+		<h1>What's Your Groove!? <span id="invisibleAnswer"></span></h1>
+	</div>
+	<div id="refresherButton" class="refresherButton">
+	<input type="button" id="button" name="button" value="TRY AGAIN" onclick = "refresher();">	
+	</div>
+		
+		
+	<form id="opener" name="opener">
+			<p>Can you dance?</p>
+			<input type="text" name="question1" placeholder="can ya?">
+			<input type="button" name="question1Submit" id="question1Submit" value="submit" onclick = "triggerQuiz();">
+
+	</form>
+	
+
+	<div class="flexContainer">
+		<form id="quiz" name="quiz" class="flexItem">
+			<p>Do you like vintage, brand new, or unique?</p>
+			<label>VINTAGE</label>
+			<input type="radio" value="old" name="generation">
+			<label>NEW</label>
+			<input type="radio" value="new" name="generation">
+
+			<label>UNIQUE</label>
+			<input type="radio" value="unusual" name="generation">
+
+			<p>Yoga or Crossfit? Choose One.</p>
+			<label>YOGA</label>
+			<input type="radio" id="yoga" value="slow" name="pace">
+
+			<label>CROSSFIT</label>
+			<input type="radio" id="crossfit" value="fast" name="pace">
+			<br>
+			<input type="button" id="button" name="button" value="let's go" onclick = "check();">
+		</form>
+
+		<div id ="imageResult" class="flexItem">
+
+			<img id="danceImage" src="images/questionmark.gif" alt="a floating box with a question mark on it">
+			
+		</div>
+	</div>
+
+	<div class="getOutContainer">
+		<img id="getout" src="images/giphy.gif" alt="a man slapping another man and telling him to 'Get Out'">
+	</div>
+
+
+	
+
+
+
+	
+
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
